@@ -51,7 +51,8 @@ def store(): #NOTE: ALWAYS USE A ARRAY TO STORE THE RETURNED DATA
     
     #converting pandas dataframe to a numpy array.
     arr = data_frame.to_numpy()
-    
+    #print(arr)
+
     return arr
 
 
