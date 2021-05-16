@@ -39,5 +39,21 @@ def retrieve():
     # Converting Pandas DataFrame into CSV file
     dataFrame.to_csv('rates.csv')
 
+def store():
+    #reading a csv file with pandas
+    data_frame = pd.read_csv("rates.csv")   
+    
+    #give the datatype of a pandas object
+    type(data_frame) 
+    
+    #this function gives us a brief view of the data.
+    data_frame.head
+    
+    #converting pandas dataframe to a numpy array.
+    arr = data_frame.to_numpy()
+    print(arr)
+
+
 #test site
 #retrieve()
+#store()
