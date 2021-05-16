@@ -244,7 +244,115 @@ def chf():
                     continue
                 break
             chf = inv * inr
-            print("EUR: ", chf)
+            print("CHY: ", chf)
+        
+        else:
+            print("Please Enter an Operation Number among them,")
+            continue
+        
+        break
+
+def myr():
+    data = rates.store()
+    inv = float(data[7][2])
+    unit = float(data[7][3])
+
+    print("Choose the Operation Number:")
+    while True:
+        ch = input("1. MYR to INR\n2. INR to MYR\n")
+        if ch == '1':
+            while True:
+                try:
+                    myr = float(input("MYR: "))
+                except:
+                    print("Enter Numerical Value Only")
+                    continue
+                break
+            inr = myr * unit
+            print("INR: ", inr)
+        
+        if ch == '2':
+            while True:
+                try:
+                    inr = float(input("INR: "))
+                except:
+                    print("Enter Numerical Value Only")
+                    continue
+                break
+            myr = inv * inr
+            print("MYR: ", myr)
+        
+        else:
+            print("Please Enter an Operation Number among them,")
+            continue
+        
+        break
+
+def jpy():
+    data = rates.store()
+    inv = float(data[8][2])
+    unit = float(data[8][3])
+
+    print("Choose the Operation Number:")
+    while True:
+        ch = input("1. JPY to INR\n2. INR to JPY\n")
+        if ch == '1':
+            while True:
+                try:
+                    jpy = float(input("JPY: "))
+                except:
+                    print("Enter Numerical Value Only")
+                    continue
+                break
+            inr = jpy * unit
+            print("INR: ", inr)
+        
+        if ch == '2':
+            while True:
+                try:
+                    inr = float(input("INR: "))
+                except:
+                    print("Enter Numerical Value Only")
+                    continue
+                break
+            jpy = inv * inr
+            print("JPY: ", jpy)
+        
+        else:
+            print("Please Enter an Operation Number among them,")
+            continue
+        
+        break
+
+def cny():
+    data = rates.store()
+    inv = float(data[9][2])
+    unit = float(data[9][3])
+
+    print("Choose the Operation Number:")
+    while True:
+        ch = input("1. CNY to INR\n2. INR to CNY\n")
+        if ch == '1':
+            while True:
+                try:
+                    cny = float(input("CNY: "))
+                except:
+                    print("Enter Numerical Value Only")
+                    continue
+                break
+            inr = cny * unit
+            print("INR: ", inr)
+        
+        if ch == '2':
+            while True:
+                try:
+                    inr = float(input("INR: "))
+                except:
+                    print("Enter Numerical Value Only")
+                    continue
+                break
+            cny = inv * inr
+            print("CHY: ", cny)
         
         else:
             print("Please Enter an Operation Number among them,")
