@@ -1,5 +1,7 @@
 import rates
 
+rates.retrieve()
+
 def usd():
     data = rates.store()
     inv = float(data[0][2])
@@ -28,7 +30,7 @@ def usd():
                     continue
                 break
             usd = inv * inr
-            print("USD: ")
+            print("USD: ", usd)
         
         else:
             print("Please Enter an Operation Number among them,")
